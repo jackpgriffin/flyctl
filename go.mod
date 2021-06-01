@@ -55,3 +55,5 @@ replace github.com/BurntSushi/toml => github.com/michaeldwan/toml v0.3.2-0.20191
 
 // for buildkit https://github.com/moby/buildkit/blob/f5962fca5e7c589620ad2c41f5c6bcaece68f3dc/go.mod#L79
 replace github.com/jaguilar/vt100 => github.com/tonistiigi/vt100 v0.0.0-20190402012908-ad4c4a574305
+
+replace golang.zx2c4.com/wireguard => golang.zx2c4.com/wireguard v0.0.0-20210424170727-c9db4b7aaa22

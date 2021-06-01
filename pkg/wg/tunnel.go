@@ -8,6 +8,7 @@ import (
 	"math/rand"
 	"net"
 
+	"golang.zx2c4.com/wireguard/conn"
 	"golang.zx2c4.com/wireguard/device"
 	"golang.zx2c4.com/wireguard/tun"
 	"golang.zx2c4.com/wireguard/tun/netstack"
@@ -48,7 +49,7 @@ func Connect(cfg Config) (*Tunnel, error) {
 	endpointIP := endpointIPs[rand.Intn(len(endpointIPs))]
 	endpointAddr := net.JoinHostPort(endpointIP.String(), endpointPort)
 
-	wgDev := device.NewDevice(tunDev, device.NewLogger(cfg.LogLevel, "(fly-ssh) "))
+	wgDev := device.NewDevice(tunDev, conn.NewDefaultBind(), device.NewLogger(cfg.LogLevel, "(fly-ssh) "))
 
 	wgConf := bytes.NewBuffer(nil)
 	fmt.Fprintf(wgConf, "private_key=%s\n", cfg.LocalPrivateKey.ToHex())
