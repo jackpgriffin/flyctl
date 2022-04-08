@@ -41,12 +41,11 @@ require (
 	github.com/spf13/cobra v1.1.3
 	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.7.0
-	golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
-	golang.org/x/net v0.0.0-20210331212208-0fccb6fa2b5c
+	golang.org/x/crypto v0.0.0-20220315160706-3147a52a75dd
+	golang.org/x/net v0.0.0-20220225172249-27dd8689420f
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20210402192133-700132347e07 // indirect
-	golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d
-	golang.zx2c4.com/wireguard v0.0.20201118
+	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
+	golang.zx2c4.com/wireguard v0.0.0-20220317033214-ee1c8e0e8789
 	golang.zx2c4.com/wireguard/tun/netstack v0.0.0-20210402170708-10533c3e73cd
 	gopkg.in/yaml.v2 v2.4.0
 )
@@ -56,4 +55,4 @@ replace github.com/BurntSushi/toml => github.com/michaeldwan/toml v0.3.2-0.20191
 // for buildkit https://github.com/moby/buildkit/blob/f5962fca5e7c589620ad2c41f5c6bcaece68f3dc/go.mod#L79
 replace github.com/jaguilar/vt100 => github.com/tonistiigi/vt100 v0.0.0-20190402012908-ad4c4a574305
 
-replace golang.zx2c4.com/wireguard => golang.zx2c4.com/wireguard v0.0.0-20210424170727-c9db4b7aaa22
+replace golang.zx2c4.com/wireguard => golang.zx2c4.com/wireguard v0.0.0-20220317033214-ee1c8e0e8789
